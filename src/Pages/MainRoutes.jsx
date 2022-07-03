@@ -1,11 +1,13 @@
 import React from 'react'
 import {Route, Routes} from "react-router-dom"
+import Books from './Books'
 
 
 const MainRoutes = () => {
+  
   return (
     <Routes>
-       <Route path='/'/>
+       <Route path='/' element={<Books/>}/>
        <Route path='/books/:id'/>
        <Route path='/books/:id/edit'/>
        <Route path='/admin'/>
